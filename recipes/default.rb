@@ -24,7 +24,7 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #Fog gem started supporting EBS Optim/PIOPs since v1.6.0
-rg = gem_package "fog" do
+rg = chef_gem "fog" do
   version node['onepower_aws']['fog_min_version']
   action :nothing
 end
